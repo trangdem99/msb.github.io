@@ -15,24 +15,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
     <style>
-        @-webkit-keyframes fadeOut {
-            0% { opacity: 1;}
-            99% { opacity: 0.01;width: 100%; height: 100%;}
-            100% { opacity: 0;width: 0; height: 0;}
-        }
-        @keyframes fadeOut {
-            0% { opacity: 1;}
-            99% { opacity: 0.01;width: 100%; height: 100%;}
-            100% { opacity: 0;width: 0; height: 0;}
-        }
-
-        /* #announcement {
-            -webkit-animation: fadeOut 1s;
-            animation: fadeOut 1s;
-            animation-fill-mode: forwards;
-        } */
-
-
         .background {
             height: 100vh;
             background-image: url('./background.jpg');
@@ -42,79 +24,116 @@
             overflow-y: hidden;
         }
 
+        #announcement {
+            margin-top: 10vh !important;
+            margin-bottom: 10vh !important;
+        }
+
+        @media (min-height: 600px) {
+            #announcement {
+                margin-top: 12.5vh !important;
+                margin-bottom: 12.5vh !important;
+            }
+        }
+
+        @media (min-height: 800px) {
+            #announcement {
+                margin-top: 15vh !important;
+                margin-bottom: 15vh !important;
+            }
+        }
+
+        @media (min-height: 1000px) {
+            #announcement {
+                margin-top: 17.5vh !important;
+                margin-bottom: 17.5vh !important;
+            }
+        }
+
+        @media (min-height: 1200px) {
+            #announcement {
+                margin-top: 20vh !important;
+                margin-bottom: 20vh !important;
+            }
+        }
+
+        @media (min-height: 1400px) {
+            #announcement {
+                margin-top: 22.5vh !important;
+                margin-bottom: 22.5vh !important;
+            }
+        }
+
+        @media (min-height: 1600px) {
+            #announcement {
+                margin-top: 25vh !important;
+                margin-bottom: 25vh !important;
+            }
+        }
+
+        @media (min-height: 1800px) {
+            #announcement {
+                margin-top: 27.5vh !important;
+                margin-bottom: 27.5vh !important;
+            }
+        }
+
+        @media (min-height: 2000px) {
+            #announcement {
+                margin-top: 30vh !important;
+                margin-bottom: 30vh !important;
+            }
+        }
+
         #announcement .messsage {
-            font-size: 0.95rem;
-            font-weight: 400;
+            font-size: calc(0.75rem + 0.1vw);
+            font-weight: medium;
         }
 
         #announcement .customer_name {
-            font-size: calc(1.05rem + 0.1vw);
-            font-weight:700!important;
-        }
-
-        #announcement .event_name {
-            font-size: calc(1.0rem + 0.075vw);
-            font-weight: 700!important;
+            font-size: calc(1.25rem + 0.1vw);
+            font-weight: 900;
         }
 
         @media (min-width: 400px) {
             #announcement .customer_name {
-                font-size: calc(1.15rem + 0.15vw);
-            }
-
-            #announcement .event_name {
-                font-size: calc(1.1rem + 0.1vw);
+                font-size: calc(1.35rem + 0.15vw);
             }
         }
 
         @media (min-width: 600px) {
             #announcement .customer_name {
-                font-size: calc(1.25rem + 0.2vw);
-            }
-
-            #announcement .event_name {
-                font-size: calc(1.2rem + 0.125vw);
+                font-size: calc(1.45rem + 0.2vw);
             }
         }
 
         @media (min-width: 800px) {
             #announcement .customer_name {
-                font-size: calc(1.35rem + 0.25vw);
-            }
-
-            #announcement .event_name {
-                font-size: calc(1.3rem + 0.15vw);
+                font-size: calc(1.55rem + 0.25vw);
             }
         }
 
         @media (min-width: 1000px) {
             #announcement .customer_name {
-                font-size: calc(1.45rem + 0.3vw);
-            }
-
-            #announcement .event_name {
-                font-size: calc(1.35rem + 0.175vw);
+                font-size: calc(1.65rem + 0.3vw);
             }
         }
 
         @media (min-width: 1200px) {
             #announcement .customer_name {
-                font-size: calc(1.55rem + 0.35vw);
+                font-size: calc(1.75rem + 0.35vw);
             }
         }
     </style>
 </head>
 <body>
     <div class="background">
-        <div class="container py-5 mt-2">
-          <header class="text-center py-5 mt-2">
+        <div class="container">
+          <header class="text-center">
             <div id="announcement">
                 <p class="messsage">
-                    Trân trọng chào đón <br />
-                    <b class="customer_name">Anh Trương Đức Lâm</b> <br />
-                    đến với chuyến tàu <br />
-                    <b class="event_name">Kiến tạo tương lai Ngân hàng bán lẻ 2023</b> <br />
-                    Chúc anh có một hành trình 2023 đầy ấn tượng!
+                    TRÂN TRỌNG CHÀO ĐÓN QUÝ HÀNH KHÁCH<br />
+                    <b class="customer_name">TRƯƠNG ĐỨC LÂM</b>
                 </p>
             </div>
           </header>
