@@ -133,12 +133,7 @@
     <div class="background">
         <div class="container">
           <header class="text-center">
-            <div id="announcement">
-                <p class="messsage">
-                    TRÂN TRỌNG CHÀO ĐÓN QUÝ HÀNH KHÁCH<br />
-                    <b class="customer_name">TRƯƠNG ĐỨC LÂM</b>
-                </p>
-            </div>
+            <div id="announcement"></div>
           </header>
         </div>
     </div>
@@ -195,13 +190,20 @@
     //     });
     // })
 
-    // let name = 'Anh Trương Đức Lâm'
+    let name = ['Trương Đức Lâm', 'Huỳnh Thành Nguyên'];
 
-    // setInterval(() => {
-    //     $('#announcement').hide();
-    //     $('#announcement').html(`<p class="fs-2">Trân trọng chào đón <br /> <b class="name">${name}</b></p>`);
-    //     $('#announcement').show();
-    // }, 3000);
+    setInterval(() => {
+        $('#announcement').hide();
+
+        $('#announcement').html(`
+            <p class="messsage">
+                TRÂN TRỌNG CHÀO ĐÓN QUÝ HÀNH KHÁCH<br />
+                <b class="customer_name">${name[Math.floor(Math.random() * name.length)]}</b>
+            </p>
+        `);
+
+        $('#announcement').show();
+    }, 3000);
 
   </script>
 </body>
